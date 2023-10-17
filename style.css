@@ -21,3 +21,8 @@ p {
   text-align: center;
   color: blue;
 }
+#team {
+  float: right;
+  width: 300px;
+  margin-right: 100px;
+}
