@@ -6,6 +6,53 @@
 
 body {
   margin: 0;
-  background-color: lightgray;
+  background-color: rgb(72, 80, 148);
   font-family: sans-serif;
 }
+/* ein wenig Farbe ins Spiel bringen */
+h1{
+  background-color: crimson;
+  font-family: 'Times New Roman', Times, serif;
+}
+h2{
+  background-color: crimson;
+  font-family: 'Times New Roman', Times, serif;
+}
+li{
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+p {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+/* hier musste ich weiss nehmen, damit die Schrift gut sichtbar ist */
+#team {
+  float: right;
+  width: 300px;
+  margin-right: 100px;
+}
+@keyframe {
+  0% animation: color:"red";
+  25% animation: color:"blue";
+  50% animation: color:"yellow";
+  75% animation: color:"red";
+  100% animation: color:"red"
+  animation-duration="6"
+  animation
+}
+/* hier habe ich zum 1. Mal versucht, einen Farbverlauf hinzukriegen, nicht funktioniert */
+
+@keyframes farbwechsel{
+  0% {background-color: blue;}
+  50%{background-color: red;}
+  75% {background-color: rgba(255, 174, 0, 0.644);}
+  100% {background-color: blue;}
+}
+body{
+  animation-name: farbwechsel;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+/* nach mehreren Ausprobieren hat der Farbverlauf geklappt */
+  
